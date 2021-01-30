@@ -1,0 +1,14 @@
+{% extends 'room_reservation/base.html' %}
+
+
+{% block content %}
+    {% for name in room_name %}
+        <div class="name">
+            <div class="date">
+                {{ name.room_name }}
+            </div>
+            <h2><a href="">{{ name.room_volume|linebreks }}</a></h2>
+        </div>
+    {% endfor %}
+{% endblock %}
+
